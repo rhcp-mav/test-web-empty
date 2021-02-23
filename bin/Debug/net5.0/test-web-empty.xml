@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>test-web-empty</name>
+    </assembly>
+    <members>
+        <member name="M:test_web_empty.Controllers.CameraGroupsController.Get">
+            <summary>
+            Get all the camera groups.
+            </summary>
+            GET: api/CameraGroupsController/GetAllCameraGroups
+        </member>
+        <member name="M:test_web_empty.Controllers.CameraGroupsController.GetById(System.Int32)">
+            <summary>
+            Get a camera group by the camera group Id.
+            </summary>
+            GET api/CameraGroupsController/GetCameraGroupById/5
+        </member>
+        <member name="M:test_web_empty.Controllers.CameraGroupsController.GetCameraGroupByName(System.String)">
+            <summary>
+            Get a camera group by the camera group name.
+            </summary>
+        </member>
+        <member name="M:test_web_empty.Controllers.CameraGroupsController.Post(test_web_empty.TCameraGroups)">
+            <summary>
+            Add the camera group.
+            </summary>
+            POST api/CameraGroupsController/AddCameraGroup
+        </member>
+        <member name="M:test_web_empty.Controllers.CameraGroupsController.Put(test_web_empty.TCameraGroups)">
+            <summary>
+            Update the camera group.
+            </summary>
+        </member>
+        <member name="M:test_web_empty.Controllers.CameraGroupsController.Delete(System.Int32)">
+            <summary>
+            Delete the camera group by Id.
+            </summary>
+            DELETE api/CameraGroupsController/DeleteCameraById/5
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.Get">
+            <summary>
+            Get all the cameras.
+            </summary>
+            GET: api/CamerasController/GetAllCameras
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.GetCameraById(System.Int32)">
+            <summary>
+            Get a camera by the camera Id.
+            </summary>
+            GET api/CamerasController/GetCameraById/5
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.GetCamerasByCameraGroupName(System.String)">
+            <summary>
+            Get the cameras by the camera group name.
+            </summary>
+            GET api/CamerasController/GetCamerasByCameraGroupName/group-001
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.Post(test_web_empty.TCameras)">
+            <summary>
+            Add the camera.
+            </summary>
+            POST api/CamerasController/AddCamera
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.AddCamerasToCameraGroup(System.Collections.Generic.List{test_web_empty.TCameras},System.Int32)">
+            <summary>
+            Add some cameras to the camera group by the camera group Id.
+            </summary>
+            POST api/CameraGroupsController/AddCamerasToCameraGroup
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.Put(test_web_empty.TCameras)">
+            <summary>
+            Update the camera.
+            </summary>
+        </member>
+        <member name="M:test_web_empty.Controllers.CamerasController.Delete(System.Int32)">
+            <summary>
+            Deletes the camera.
+            </summary>
+            DELETE api/CamerasController/DeleteCameraById/5
+        </member>
+    </members>
+</doc>
